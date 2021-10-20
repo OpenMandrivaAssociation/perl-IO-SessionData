@@ -13,6 +13,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildArch:	noarch
+BuildRequires:	perl(ExtUtils::MakeMaker)
 
 %description
 Supporting module for SOAP::Lite.
@@ -22,7 +23,6 @@ Supporting module for SOAP::Lite.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-
 %make_build
 
 %check
@@ -34,5 +34,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %files
 %doc Changes META.json META.yml README
 %{perl_vendorlib}/*
-
-
