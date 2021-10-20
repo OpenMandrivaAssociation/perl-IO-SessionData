@@ -14,6 +14,7 @@ Source0:	http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_ve
 
 BuildArch:	noarch
 BuildRequires:	perl(ExtUtils::MakeMaker)
+BuildRequires:	perl(Test::More)
 
 %description
 Supporting module for SOAP::Lite.
